@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: NunitoBold;
+    src: url(../assets/fonts/Nunito-Bold.ttf);
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(90deg, #FFFFFB 50%, #F8F8FA 50%);
+    font-family: NunitoBold, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: 27px 0 112px 0;
+}
+
+.division {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.left {
+    margin-left: 300px;
+}
+
+.account h1 {
+    font-size: 36px;
+    margin-bottom: 7px;
+}
+
+.info-account {
+    color: #636363;
+    width: 496px;
+    font-size: 22px;
+    line-height: 27px;
+    margin-bottom: 42px;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.form-tittle {
+    color: #C6C6C4;
+    font-size: 16px;
+    margin: 20px 0 5px 0;
+    width: 452px;
+
+}
+
+.form-input {
+    border: none;
+    border-bottom: 1px solid #C6C6C4;
+    padding: 15px 0 5px 0;
+    width: 452px;
+    outline: none;
+}
+
+.form-input::placeholder {
+    font-size: 20px;
+    color: #323232;
+}
+
+.checkbox {
+    margin: 30px 0 40px 0;
+}
+
+.checkbox-text {
+    color: #636363;
+    font-size: 16px;
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+.button {
+    border: none;
+    background-color: #DD3142;
+    width: 210px;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 40px;
+    padding: 23px 0;
+    margin: 0 auto;
+}
+
+.already {
+    text-align: center;
+    margin: 44px 0 191px 0;
+}
+
+.already-link {
+    color: #636363;
+    font-size: 16px;
+}
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    font-family: NunitoBold, sans-serif;
+}
+
+.modal-content p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+}
+
+.modal-content button {
+    padding: 10px 30px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.modal-content button:hover {
+    background-color: #218838;
+}
+

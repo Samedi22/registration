@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+</head>
+<body>
+<header class="header">
+    <picture class="logo">
+        <img src="assets/images/logo.png" alt="Logo">
+    </picture>
+</header>
+<section class="division">
+    <article class="left">
+        <section class="account">
+            <h1>Get your free account</h1>
+            <article class="info-account">
+                Try homeWorks BUSINESS free for 15 days. Downgrade to Basic (Free Forever) anytime.
+            </article>
+        </section>
+        <form class="form" id="signup-form">
+            <label class="form-tittle">
+                Full name
+                <input type="text" placeholder="Antony Swarowski" class="form-input" id="form-input-name">
+            </label>
+            <label class="form-tittle">
+                Your username
+                <input type="text"  class="form-input" id="form-input-username">
+            </label>
+            <label class="form-tittle">
+                E-mail
+                <input type="email" class="form-input" id="form-input-email">
+            </label>
+            <label class="form-tittle">
+                Password
+                <input type="password" class="form-input" id="form-input-password">
+            </label>
+            <label class="form-tittle">
+                Repeat Password
+                <input type="password"  class="form-input" id="form-input-repeat-password">
+            </label>
+            <label class="checkbox">
+                <input type="checkbox" name="if" value="Agree to our Terms of Service and Privacy Statement" required id="checkbox">
+                <a href="#" class="checkbox-text">Agree to our Terms of Service and Privacy Statement</a>
+            </label>
+            <button type="button" class="button" id="sign-up">Sign up</button>
+        </form>
+        <section class="already">
+            <a href="#" class="already-link">Already have an account?</a>
+        </section>
+    </article>
+    <article class="right">
+        <picture>
+            <img src="assets/images/image.png" alt="Image right">
+        </picture>
+    </article>
+</section>
+<section id="success-modal" class="modal-overlay">
+    <article class="modal-content">
+        <p>На вашу почту выслана ссылка, перейдите по ней, чтобы завершить регистрацию</p>
+        <button id="modal-ok-btn">ОК</button>
+    </article>
+</section>
+
+<script src="scripts/script.js"></script>
+</body>
+</html>
